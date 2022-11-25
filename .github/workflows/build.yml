@@ -39,7 +39,7 @@ jobs:
         with:
           context: .
           builder: ${{ steps.buildx.outputs.name }}
-          platforms: linux/arm/v7,linux/arm64,linux/amd64
+          platforms: linux/arm/v6
           push: true
           tags: |
             hvalev/shiny-server-arm:${{ steps.get_version.outputs.version }}
